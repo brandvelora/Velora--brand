@@ -44,7 +44,7 @@ nav.desk a:hover::after{transform:scaleX(1)}
 .burger{display:none;background:none;border:0;color:var(--warm);width:48px;height:48px;cursor:pointer;position:relative}
 .burger span{position:absolute;left:11px;right:11px;height:1px;background:currentColor}
 .burger span:nth-child(1){top:17px}.burger span:nth-child(2){top:24px}.burger span:nth-child(3){top:31px}
-.menu{position:fixed;inset:0;z-index:150;background:var(--ink);display:flex;flex-direction:column;justify-content:center;padding:var(--pad);visibility:hidden;opacity:0;clip-path:inset(0 0 100% 0);transition:clip-path 1s var(--ease),opacity .6s}
+.menu{position:fixed;inset:0;z-index:150;background:var(--ink);display:flex;flex-direction:column;justify-content:center;padding:var(--pad);visibility:hidden;opacity:0;clip-path:inset(0 0 100% 0);transition:clip-path .9s var(--ease),opacity .5s ease}
 .menu.open{visibility:visible;opacity:1;clip-path:inset(0);transition:clip-path 1s var(--ease),opacity .6s}
 .menu ul{list-style:none}
 .menu li a{display:block;font-family:var(--serif);font-size:clamp(2.2rem,10vw,3.4rem);font-weight:300;padding:.5rem 0;border-bottom:1px solid var(--line)}
@@ -58,7 +58,7 @@ nav.desk a:hover::after{transform:scaleX(1)}
 .slide .bg{position:absolute;inset:-4%;background-size:cover;background-position:var(--pos,center);filter:blur(3.5px) brightness(.62) contrast(1.05) saturate(.85);transform:scale(1)}
 .slide.on .bg{animation:zoom 14s linear forwards}
 @keyframes zoom{to{transform:scale(1.09) translate3d(-.6%,-.6%,0)}}
-.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at center,rgba(0,0,0,0) 38%,rgba(0,0,0,.6) 100%),linear-gradient(180deg,rgba(11,11,12,.55),rgba(11,11,12,.18) 28%,rgba(11,11,12,.68) 100%)}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at center,rgba(0,0,0,0) 38%,rgba(0,0,0,.6) 100%),linear-gradient(180deg,rgba(11,11,12,.55),rgba(11,11,12,.8))}
 .hero-copy{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:6rem var(--pad) 7rem}
 .hero .brand{color:var(--silver);margin-bottom:2rem}
 .stack{display:grid;width:100%;max-width:1100px}
@@ -66,7 +66,7 @@ nav.desk a:hover::after{transform:scaleX(1)}
 .txt.on{opacity:1;transform:none;transition-delay:1.1s}
 .txt h1{font-size:clamp(2rem,7.4vw,6rem);letter-spacing:.04em;text-transform:uppercase}
 .txt p{font-family:var(--serif);font-style:italic;font-size:clamp(1.1rem,2.6vw,1.7rem);color:var(--silver);margin-top:1.3rem}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 2.2rem;border:1px solid rgba(241,237,230,.55);color:var(--warm);background:transparent;transition:background .7s var(--ease),color .7s var(--ease),opacity .6s ease,transform .6s var(--ease)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 2.2rem;border:1px solid rgba(241,237,230,.55);color:var(--warm);background:transparent;transition:background .7s var(--ease),color .7s var(--ease),opacity .6s ease,transform .6s var(--ease);-webkit-tap-highlight-color:transparent}
 .btn:hover{background:var(--warm);color:var(--ink)}
 .hero .btn{margin-top:2.6rem}
 @media(max-width:600px){.hero .btn{width:100%;max-width:320px}.hero .brand{letter-spacing:.22em}}
@@ -156,7 +156,6 @@ nav.desk a:hover::after{transform:scaleX(1)}
 
 
 /* Contact interactions */
-.btn{transition:background .7s var(--ease),color .7s var(--ease),opacity .6s ease,transform .6s var(--ease);-webkit-tap-highlight-color:transparent}
 .btn:hover{transform:translateY(-2px);opacity:.92}
 .btn:active{transform:translateY(0);opacity:.75}
 .req .alt{margin-top:1.4rem;color:var(--grey);font-size:.95rem}
@@ -257,7 +256,7 @@ nav.desk a:hover::after{transform:scaleX(1)}
   <div class="wrap">
     <div class="head">
       <div class="rv"><p class="caps">The Velora World</p><h2>Fashion with identity.</h2></div>
-      <p class="rv d1">Velora explores fashion as a form of personal expression — bringing together individuality, elegance and contemporary style to create a world where every look can feel distinct, intentional and personal.</p>
+      <p class="rv d1">Velora explores fashion as a form of personal expression — bringing together individuality, elegance and contemporary style to create a world where every look can feel distinctive.</p>
     </div>
     <div class="frame rv-img"><img src="velora-editorial-01.jpg" alt="Velora campaign photograph — replace with description" loading="lazy"></div>
   </div>
@@ -295,7 +294,7 @@ nav.desk a:hover::after{transform:scaleX(1)}
 <section class="exp" aria-labelledby="exph">
   <div class="wrap">
     <h2 id="exph" class="rv">The Velora experience</h2>
-    <p class="lead rv d1">Velora is a fashion experience shaped around personal expression. From discovering a style that speaks to you to making a private request, every interaction is designed to feel deliberate, thoughtful and uniquely personal.</p>
+    <p class="lead rv d1">Velora is a fashion experience shaped around personal expression. From discovering a style that speaks to you to making a private request, every interaction is designed to feel considered and personal.</p>
     <ol class="steps">
       <li class="rv"><span class="n">01</span><h3>Discover</h3><p>Explore the world of Velora and discover styles created around individuality and expression.</p></li>
       <li class="rv d1"><span class="n">02</span><h3>Select</h3><p>When a particular outfit catches your attention, reach out to Velora directly for further details, availability and ordering.</p></li>
@@ -309,7 +308,7 @@ nav.desk a:hover::after{transform:scaleX(1)}
     <p class="caps rv">Your Velora request</p>
     <h2 id="reqh" class="rv d1">Found something that speaks to you?</h2>
     <p class="sub rv d1">For outfit requests, orders, availability, sizing or further details, connect with Velora directly by email.</p>
-    <div class="rv d2"><a class="btn caps" id="request" href="mailto:velora.reuters@gmail.com?subject=Velora%20Fashion%20Request&body=Hello%20Velora%2C%0A%0AI%20am%20interested%20in%20making%20an%20inquiry%20regarding%20a%20Velora%20piece.%0A%0AThank%20you.%0A">Request a piece</a></div>
+    <div class="rv d2"><a class="btn caps" id="request" href="mailto:velora.reuters@gmail.com?subject=Velora%20Fashion%20Request&body=Hello%20Velora%2C%0A%0AI%20am%20interested%20in%20making%20an%20inquiry%20regarding%20a%20Velora%20piece%20or%20request.%0A%0APlease%20share%20more%20details.%0A%0AThank%20you.">Request a fitting</a></div>
     <p class="alt rv d2">Or write directly to <a class="mail-alt" href="mailto:velora.reuters@gmail.com?subject=Velora%20Fashion%20Request">velora.reuters@gmail.com</a></p>
     <div class="incl rv">
       <p class="caps">For a smoother request, please include:</p>
@@ -344,8 +343,8 @@ nav.desk a:hover::after{transform:scaleX(1)}
         <h4 class="caps">Contact</h4>
         <ul>
           <li><a href="mailto:velora.reuters@gmail.com"><small>Email</small>velora.reuters@gmail.com</a></li>
-          <li><a href="https://wa.me/97466773235" target="_blank" rel="noopener noreferrer"><small>WhatsApp</small>+974 6677 3235</a></li>
-          <li><a href="tel:+97466773235"><small>Call</small>+974 6677 3235</a></li>
+          <li><a href="https://wa.me/254725718349" target="_blank" rel="noopener noreferrer"><small>WhatsApp</small>+254 725 718 349</a></li>
+          <li><a href="tel:+254725718349"><small>Call</small>+254 725 718 349</a></li>
         </ul>
       </div>
       <div>
@@ -357,7 +356,7 @@ nav.desk a:hover::after{transform:scaleX(1)}
       </div>
       <div>
         <h4 class="caps">Private</h4>
-        <a class="caps plink" href="mailto:velora.reuters@gmail.com?subject=Velora%20Fashion%20Request&body=Hello%20Velora%2C%0A%0AI%20am%20interested%20in%20making%20an%20inquiry%20regarding%20a%20Velora%20piece.%0A%0AThank%20you.%0A">Request a private consultation</a>
+        <a class="caps plink" href="mailto:velora.reuters@gmail.com?subject=Velora%20Fashion%20Request&body=Hello%20Velora%2C%0A%0AI%20am%20interested%20in%20making%20an%20inquiry%20regarding%20a%20Velora%20piece%20or%20request.%0A%0APlease%20share%20more%20details.%0A%0AThank%20you.">Inquire</a>
       </div>
     </div>
     <p class="legal caps">© 2026 VELORA. All rights reserved.</p>
